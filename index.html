@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web-Based Keyboard Input Monitoring System</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<h1>Web-Based Keyboard Input Monitoring System</h1>
+
+<p><b>Status:</b> {{ status }}</p>
+
+<div class="buttons">
+    <a href="/start"><button>Start Logging</button></a>
+    <a href="/stop"><button class="stop">Stop Logging</button></a>
+    <a href="/clear"><button class="clear">Clear Logs</button></a>
+</div>
+
+<h3>Logged Keystrokes</h3>
+<textarea readonly>{{ data }}</textarea>
+
+<p class="note">
+    This application demonstrates keyboard input handling concepts in web applications.
+</p>
+
+</body>
+</html>
